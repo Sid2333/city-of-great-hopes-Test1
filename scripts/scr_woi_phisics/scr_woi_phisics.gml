@@ -18,7 +18,7 @@ if (place_meeting(x, y - vsp, obstacle)){
    
    // return vsp;
    // while (!place_meeting(x , y + sign(vsp), obstacle)){
-     // y += sign(vsp);
+   // y += sign(vsp);
      
   // }
   spd[1] = 0;

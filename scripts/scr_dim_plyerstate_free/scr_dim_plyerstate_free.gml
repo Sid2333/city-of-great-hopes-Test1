@@ -24,7 +24,18 @@ y -= col[1];
 // відповідність глибини до вертикальної кординати
 depth = -y;
 
-// перевірка стану
-if (keyattack) state = PLAYERSTATE.ATTACK1
+// перевіка відпочинку 
+if (resetime > 0) resetime -=1;
+if (resetime < 30){
+// перемикання станів
+if (keyattack) {
+state = PLAYERSTATE.ATTACK1
+resetime += 30;
+}
 
+if (keyblock){
+	state = PLAYERSTATE.BLOCK
+	resetime += 60;
+}
+}
 }

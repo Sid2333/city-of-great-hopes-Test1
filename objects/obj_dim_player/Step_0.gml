@@ -7,7 +7,7 @@ keyl     =  keyboard_check(vk_left);
 keyup    =  keyboard_check(vk_up);
 keydown  =  keyboard_check(vk_down);
 keyattack=  keyboard_check_pressed(ord("Z"));
-
+keyblock=  keyboard_check_pressed(ord("B"));
 
  switch(state){
  case	PLAYERSTATE.FREE	  : scr_dim_plyerstate_free();     break;
